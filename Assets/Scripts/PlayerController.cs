@@ -14,9 +14,13 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // We will add code here to forawrd the  vehicle
-           //transform.Translate(0, 0, 1);
+        //transform.Translate(0, 0, 1);
 
         // Forward a vehicle with vector3 which is shorthand style of above function
-        transform.Translate(Vector3.forward);
+        //transform.Translate(Vector3.forward);
+
+        // Slowing down a speed of a vehicle from above  function
+
+        transform.Translate(Vector3.forward * Time.deltaTime  * 20);
     }
 }
